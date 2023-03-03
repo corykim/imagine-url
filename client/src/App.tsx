@@ -131,7 +131,6 @@ function App() {
                       {summary}
                   </Box>
                     {showImage && <Box className={'image'}>
-                        {(summaryLoading || imageLoading) && <MySpinner/>}
                         {image && <Image src={image} alt={summary}/>}
                     </Box>
                     }
@@ -141,6 +140,7 @@ function App() {
                         <AlertDescription>We're sorry, but we were unable to produce an
                           image for your page. This page may contain sensitive content.</AlertDescription></Alert>}
                 </Box>}
+                {(summaryLoading || imageLoading) && <MySpinner/>}
             </VStack>
         </div>
     );
