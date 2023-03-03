@@ -10,7 +10,7 @@ in the following steps:
 
 ## Installation
 ### OpenAI API key
-You must obtain an OpenAI API key. Visit the [OpenAI](https://platform.openai.com/) website and generate an API key. 
+You must obtain an OpenAI API key. Visit the [OpenAI](https://platform.openai.com/account/api-keys) website and generate an API key. 
 
 ### Server
 The server is found at `./server`. This script has been tested with Python 3.10. From a command line, run:

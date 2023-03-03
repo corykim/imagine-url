@@ -13,6 +13,7 @@ from fastapi import FastAPI
 
 dotenv_flow()
 openai.api_key = os.getenv("OPENAI_API_KEY")
+print(f'API key is [{openai.api_key}]')
 
 app = FastAPI()
 
