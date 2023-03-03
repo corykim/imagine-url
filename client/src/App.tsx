@@ -116,6 +116,7 @@ function App() {
                            onChange={handleChangeUrl}
                            onClick={resetUrl}
                            onKeyDown={handleKeyDown}
+                           autoFocus={true}
                     />
                     {loadingError && <Alert status={'error'}>
                       <AlertIcon/>
