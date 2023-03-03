@@ -39,15 +39,37 @@ function App() {
         setUrl('');
     }
 
-    const fetchSummary = useCallback(() => {
-        console.log('getSummary', url);
+    const imagine = useCallback(() => {
+        // we get the summary first, then request an image from the summary
+        console.log('getting summary ...', url);
         setSummaryLoading(true)
         fetch('/api/summarize?' + new URLSearchParams({
             url
         })).then((response) => response.json())
-            .then((data) => {
-                console.log('data', data)
-                setSummary(data.summary)
+            .then((summaryData) => {
+                console.log('summary data', summaryData)
+                setSummary(summaryData.summary)
+
+                console.log('getting image ...', url);
+                setImageLoading(true)
+                fetch('/api/imagine', {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({prompt: summaryData.summary})
+                }).then((response) => response.json())
+                    .then((imageData) => {
+                        console.log('image data', imageData)
+                        setImage(imageData.image)
+                    })
+                    .catch((error) => {
+                        console.error('Got error imagining page', url, error);
+                        setImageError(true);
+                    })
+                    .finally(() => {
+                        setImageLoading(false);
+                    })
             })
             .catch((error) => {
                 console.error('Got error summarizing page', url, error);
@@ -56,26 +78,7 @@ function App() {
             .finally(() => {
                 setSummaryLoading(false);
             })
-    }, [url, loadingError, setLoadingError, setSummary, setSummaryLoading])
-
-    const fetchImage = useCallback(() => {
-        console.log('getImage', url);
-        setImageLoading(true)
-        fetch('/api/imagine?' + new URLSearchParams({
-            url
-        })).then((response) => response.json())
-            .then((data) => {
-                console.log('data', data)
-                setImage(data.image)
-            })
-            .catch((error) => {
-                console.error('Got error imagining page', url, error);
-                setImageError(true);
-            })
-            .finally(() => {
-                setImageLoading(false);
-            })
-    }, [url, setImage, setImageLoading, setImageError])
+    }, [url, loadingError, setLoadingError, setSummary, setSummaryLoading, setImage, setImageLoading, setImageError])
 
 
     function handleSubmit() {
@@ -85,8 +88,7 @@ function App() {
         setLoadingError('');
         setImageError(false);
 
-        fetchSummary();
-        fetchImage();
+        imagine();
     }
 
     useEffect(() => {

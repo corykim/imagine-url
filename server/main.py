@@ -10,6 +10,7 @@ import uvicorn
 from bs4 import BeautifulSoup
 from dotenv_flow import dotenv_flow
 from fastapi import FastAPI
+from pydantic import BaseModel
 
 dotenv_flow()
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -137,6 +138,22 @@ def imagine(url: str):
 
     return {
         'url': url,
+        'image': image_url
+    }
+
+
+class ImageRequest(BaseModel):
+    prompt: str
+
+
+@app.post("/api/imagine")
+def imagine_prompt(req: ImageRequest):
+    image_url = generate_image(req.prompt)
+    print("Image:")
+    print(image_url)
+
+    return {
+        'prompt': req.prompt,
         'image': image_url
     }
 
