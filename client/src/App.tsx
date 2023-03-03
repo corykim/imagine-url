@@ -29,6 +29,12 @@ function App() {
         setUrl(evt.target.value)
     }
 
+    function handleKeyDown(evt: React.KeyboardEvent) {
+        if (evt.code === 'Enter') {
+            handleSubmit();
+        }
+    }
+
     function resetUrl() {
         setUrl('');
     }
@@ -109,6 +115,7 @@ function App() {
                            placeholder={'Enter the URL of a web page you would like to imagine'}
                            onChange={handleChangeUrl}
                            onClick={resetUrl}
+                           onKeyDown={handleKeyDown}
                     />
                     {loadingError && <Alert status={'error'}>
                       <AlertIcon/>
