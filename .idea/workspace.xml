@@ -5,41 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e47ac24-aade-4d01-8121-434958311e69" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/.eslintrc.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/.nvmrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/.prettierrc.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/App.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/reportWebVitals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/setupTests.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/tsconfig.node.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-ai.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.env.local" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-ai.iml" beforeDir="false" afterPath="$PROJECT_DIR$/imagine-url.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,12 +46,15 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "/Users/cory/code/cory/learn-open-ai/open-ai/server",
+    "last_opened_file_path": "/Users/cory/code/cory/learn-open-ai/imagine-url",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.27887323",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "/Users/cory/code/cory/learn-open-ai/open-ai/client/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
@@ -104,7 +76,7 @@
       <method v="2" />
     </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="open-ai" />
+      <module name="imagine-url" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -126,7 +98,7 @@
       <method v="2" />
     </configuration>
     <configuration name="test-01 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="open-ai" />
+      <module name="imagine-url" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -148,7 +120,7 @@
       <method v="2" />
     </configuration>
     <configuration name="test-02" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="open-ai" />
+      <module name="imagine-url" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -170,7 +142,7 @@
       <method v="2" />
     </configuration>
     <configuration name="test-04" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="open-ai" />
+      <module name="imagine-url" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -228,6 +200,8 @@
       <option name="presentableId" value="Default" />
       <updated>1677791132912</updated>
       <workItem from="1677791133914" duration="14382000" />
+      <workItem from="1677806313616" duration="18000" />
+      <workItem from="1677806338677" duration="884000" />
     </task>
     <servers />
   </component>
