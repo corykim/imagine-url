@@ -107,6 +107,13 @@ def generate_image(prompt: str) -> str:
     return image
 
 
+@app.get("/api/health-check")
+def health_check():
+    return {
+        'healthy': True
+    }
+
+
 @app.get("/api/summarize")
 def summarize(url: str):
     page_content = extract_page_content(url)
@@ -159,4 +166,4 @@ def imagine_prompt(req: ImageRequest):
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="localhost")
